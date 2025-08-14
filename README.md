@@ -1,222 +1,87 @@
-# VibeCheck - AI-Powered Vulnerability Scanner 🛡️
+VibeCheck - AI-Powered Vulnerability Scanner 
 
-> **AI-powered security assistant with integrated Gemini chatbot, exactly like Cursor IDE**
+Your next-gen AI security assistant — lightning-fast vulnerability detection paired with an intelligent chat companion powered by Google Gemini.
 
-![VibeCheck Demo](https://via.placeholder.com/800x400/000000/ffffff?text=VibeCheck+-+AI+Security+Assistant)
 
-## ✅ **Issues Fixed & Features Implemented**
+ Critical Security Update: CWE-489 Fix
 
-### 🚨 **Security Fix: CWE-489 Vulnerability**
-- **Fixed Flask debug=True vulnerability** in production
-- Now uses environment variables for secure configuration
-- No hardcoded debug flags or sensitive information
+Removed dangerous debug=True in production Flask server
 
-### 🤖 **AI Security Assistant Sidebar** 
-- **Cursor IDE-style interface** with professional dark theme
-- **Powered by Google Gemini** (1.5 Flash, 1.5 Pro, 2.0 Flash, 2.0 Pro)
-- **Context-aware conversations** about vulnerabilities and security
-- **Smart quota handling** with automatic model fallback
-- **Real-time chat** with typing indicators and error recovery
+Secure setup via environment variables — no hardcoded secrets
 
-### 🔧 **Setup Complete**
-- **API Key Integrated**: `AIzaSyBNevxzj0KwFU8zbm_cibbt-0tQla-DSis`
-- **Environment configured**: `.env.local` ready
-- **Hydration issues fixed**: No more SSR/client mismatches
-- **Build ready**: Clean compilation with all dependencies
+Hardened for safe deployment from day one
 
-## 🚀 **Quick Start**
 
-### 1. Start the Application
-```bash
-# Terminal 1: Start Next.js (port 3000/3001)
-npm run dev
+ AI Powered Security Assistant Sidebar
 
-# Terminal 2: Start Python scanner service (port 5000)
-python scanner_service.py --debug
-```
+Sleek, professional dark theme UI designed for seamless workflow
 
-### 2. Use the AI Assistant
-1. **Open a folder** using "Open Folder" button
-2. **Run security scan** with "Analyze" button  
-3. **Chat with AI** about vulnerabilities in the right sidebar
-4. **Click vulnerabilities** to ask specific questions
-5. **Switch models** using the top dropdown for different response styles
+Built-in AI chat with Google Gemini models (1.5 Flash/Pro, 2.0 Flash/Pro)
 
-## 🎯 **Key Features**
+Context-aware, security-focused conversations about your code
 
-### **Smart Vulnerability Analysis**
-- **Click-to-ask**: Click any vulnerability to automatically generate relevant questions
-- **Context awareness**: AI understands your selected files and code
-- **CWE explanations**: Get detailed explanations of security classifications
-- **Fix recommendations**: Receive specific, actionable fix suggestions
+Auto model fallback ensures smooth experience even with quota limits
 
-### **Professional UI Design** 
-- **Cursor IDE aesthetic**: Dark theme with smooth animations
-- **Responsive design**: Works on different screen sizes
-- **Real-time interactions**: Typing indicators, hover states, error handling
-- **Professional styling**: Clean, minimal design focused on productivity
+Real-time typing indicators & smart error recovery keep you productive
 
-### **Robust AI Integration**
-- **Multiple models**: Gemini 1.5 Flash (fast), 1.5 Pro (balanced), 2.0+ (advanced)
-- **Smart quota handling**: Automatic fallback when API limits hit
-- **Error recovery**: Graceful handling of API issues with user feedback
-- **Optimized requests**: Reduced token usage for cost efficiency
 
-## 🛡️ **Supported Security Issues**
+ Get Started in Seconds
 
-- **SQL Injection** (CWE-89)
-- **Cross-Site Scripting** (XSS) (CWE-79)  
-- **Command Injection** (CWE-78)
-- **Path Traversal** (CWE-22)
-- **Hardcoded Credentials** (CWE-798)
-- **Weak Cryptography** (CWE-327)
-- **XML External Entities** (XXE) (CWE-611)
-- **CSRF Protection Issues** (CWE-352)
-- **Information Disclosure** (CWE-200)
-- **And 50+ more vulnerability types**
+Start frontend and backend services:
 
-## 🔧 **Technical Stack**
+npm run dev       # Runs Next.js frontend (port 3000/3001)
+python scanner_service.py --debug  # Runs Python vulnerability scanner (port 5000)
 
-### **Frontend**
-- **Next.js 14** with TypeScript and App Router
-- **Tailwind CSS** for styling
-- **Framer Motion** for smooth animations
-- **Radix UI** for accessible components
-- **Monaco Editor** for code viewing/editing
 
-### **AI Integration**
-- **Google Gemini API** with multiple model support
-- **Context-aware prompting** for security-focused responses
-- **Smart token management** and quota handling
-- **Environment-based API key configuration**
+Open a project folder in the app
 
-### **Backend**
-- **Flask** with Semgrep for vulnerability scanning
-- **Multi-language support** (JavaScript, Python, Java, PHP, Go, etc.)
-- **Real-time file processing** with secure path handling
-- **Production-ready configuration** with proper error handling
+Click Analyze to scan for vulnerabilities
 
-## 🎨 **UI Highlights**
+Chat with your AI assistant — ask questions, get fix advice
 
-### **Sidebar Design (Cursor-inspired)**
-- **Split layout**: Vulnerabilities list + Chat interface
-- **Smart filtering**: Show vulnerabilities for selected files
-- **Interactive cards**: Click to ask AI about specific issues
-- **Professional icons**: Severity indicators and action buttons
-- **Smooth scrolling**: Optimized for large lists
+Click vulnerabilities to explore details & remediation tips
 
-### **Chat Interface**
-- **Message threading**: Clear conversation history
-- **Typing indicators**: Real-time feedback
-- **Error handling**: Graceful degradation with helpful messages
-- **Code highlighting**: Syntax highlighting in responses
-- **Timestamp tracking**: Full conversation history
+Switch between Gemini models for different response styles
 
-## 📊 **Model Comparison**
 
-| Model | Speed | Accuracy | Cost | Best For |
-|-------|-------|----------|------|----------|
-| **Gemini 1.5 Flash** ⭐ | Very Fast | Good | Low | General queries, quick explanations |
-| **Gemini 1.5 Pro** | Medium | High | Medium | Detailed analysis, complex questions |
-| **Gemini 2.0 Flash (exp)** | Fast | Very High | Medium | Latest features, experimental |
-| **Gemini 2.0 Pro (exp)** | Slow | Highest | High | Complex analysis, research tasks |
+ Why VibeCheck?
 
-## 🔒 **Security Notes**
+Smart Vulnerability Detection: Automatically identifies 50+ vulnerability types
 
-### **Production Ready**
-- ✅ **No debug flags** in production
-- ✅ **Environment variables** for sensitive data
-- ✅ **Input validation** and sanitization
-- ✅ **Secure file handling** with path restrictions
-- ✅ **API key protection** (never logged or exposed)
+Interactive Exploration: Click issues, get instant AI-driven insights & fixes
 
-### **Privacy**
-- **Local processing**: File contents only sent to AI when explicitly asked
-- **No data storage**: Conversations not permanently stored
-- **User control**: Full control over what data is shared with AI
-- **Secure transmission**: All API calls use HTTPS
+Context-Aware: AI understands your current code context for targeted advice
 
-## 🐛 **Troubleshooting**
+Professional UI: Minimalist, responsive design crafted for developer focus
 
-### **API Issues**
-```
-❌ "API quota exceeded" 
-✅ Switch to Gemini 1.5 Flash model or wait 30 seconds
-```
+Robust AI Integration: Multi-model support with graceful quota fallback
 
-```
-❌ "Invalid API key"
-✅ Check .env.local file has correct GEMINI_API_KEY
-```
+Secure & Privacy-Focused: No data stored, secure API key management, local file control
 
-```
-❌ Chat not responding
-✅ Ensure Next.js dev server is running on port 3000/3001
-```
+ Security You Can Trust
 
-### **Scan Issues**
-```
-❌ "No vulnerabilities found" in obviously vulnerable code
-✅ Check Python scanner service is running on port 5000
-```
+No debug flags enabled in production
 
-```
-❌ "Failed to scan directory"
-✅ Ensure Semgrep is installed: pip install semgrep
-```
+Environment variables for all secrets
 
-## 📈 **Future Enhancements**
+Input validation and safe file handling
 
-- [ ] **Multi-AI support** (Claude, GPT-4, CodeT5)
-- [ ] **Custom vulnerability rules** with user-defined patterns
-- [ ] **Team collaboration** with shared scans and findings
-- [ ] **CI/CD integration** for automated security checks
-- [ ] **Advanced reporting** with PDF/JSON export
-- [ ] **Historical tracking** of vulnerability trends
+HTTPS-encrypted API communication
 
----
+Zero persistent storage of your code or conversations
 
-## 💬 **Example Conversations**
 
-### **General Security Question**
-```
-User: "What are the most common web application vulnerabilities?"
+ Tech Stack
 
-AI: "The most common web application vulnerabilities include:
+Frontend: Next.js 14, TypeScript, Tailwind CSS, Framer Motion, Radix UI, Monaco Editor
 
-1. **SQL Injection (CWE-89)** - Attackers manipulate database queries
-2. **Cross-Site Scripting (XSS) (CWE-79)** - Malicious scripts executed in browsers
-3. **Cross-Site Request Forgery (CSRF)** - Unauthorized actions on behalf of users
-4. **Insecure Authentication** - Weak login/session management
-5. **Security Misconfigurations** - Default passwords, open ports, etc.
+Backend: Flask + Semgrep vulnerability scanning
 
-Would you like me to explain any of these in detail or show you how to prevent them in your specific codebase?"
-```
+AI: Google Gemini API with smart token & quota management
 
-### **Specific Vulnerability Question**
-```
-User: [Clicks on SQL Injection vulnerability in file.php:42]
-
-AI: "I see you have a SQL injection vulnerability in file.php at line 42. This appears to be caused by directly concatenating user input into a SQL query.
-
-**The Issue:**
-```php
-$query = "SELECT * FROM users WHERE id = " . $_GET['id'];
-```
-
-**Why it's dangerous:**
-An attacker could input `1 OR 1=1--` to bypass authentication or `1; DROP TABLE users;--` to delete data.
-
-**The Fix:**
-Use prepared statements:
-```php
-$stmt = $pdo->prepare("SELECT * FROM users WHERE id = ?");
-$stmt->execute([$_GET['id']]);
-```
-
-Would you like me to explain how prepared statements work or help you fix other similar issues in your codebase?"
-```
-
----
-
-**🎉 Your AI-powered security assistant is ready! Open a folder, run a scan, and start chatting about security.**
+Model Options
+Model	Speed	Accuracy	Cost	Ideal Use Case
+Gemini 1.5 Flash ⭐	Very Fast	Good	Low	Quick scans & simple queries
+Gemini 1.5 Pro	Medium	High	Medium	Detailed analysis & fixes
+Gemini 2.0 Flash	Fast	Very High	Medium	Cutting-edge experimental use
+Gemini 2.0 Pro	Slow	Highest	High	Deep research & complex issues
