@@ -1,0 +1,60 @@
+
+> my-v0-project@0.1.0 dev
+> next dev
+
+ ⚠ Port 3000 is in use, trying 3001 instead.
+  ▲ Next.js 14.2.16
+  - Local:        http://localhost:3001
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 1138ms
+ ✓ Compiled /api/chat in 95ms (55 modules)
+Using model: gemini-2.0-pro-exp-02-05
+Sending prompt to Gemini...
+Chat API error: GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-pro-exp-02-05:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-pro-exp"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-pro-exp"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count","quotaId":"GenerateContentInputTokensPerModelPerMinute-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-pro-exp"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count","quotaId":"GenerateContentInputTokensPerModelPerDay-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-pro-exp"}}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"38s"}]
+    at handleResponseNotOk (webpack-internal:///(rsc)/./node_modules/@google/generative-ai/dist/index.mjs:455:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async makeRequest (webpack-internal:///(rsc)/./node_modules/@google/generative-ai/dist/index.mjs:424:9)
+    at async generateContent (webpack-internal:///(rsc)/./node_modules/@google/generative-ai/dist/index.mjs:888:22)
+    at async POST (webpack-internal:///(rsc)/./app/api/chat/route.ts:96:24)
+    at async /Users/sreeramkumarvr/Downloads/vibechack/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55831
+    at async eO.execute (/Users/sreeramkumarvr/Downloads/vibechack/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46527)
+    at async eO.handle (/Users/sreeramkumarvr/Downloads/vibechack/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57165)
+    at async doRender (/Users/sreeramkumarvr/Downloads/vibechack/node_modules/next/dist/server/base-server.js:1352:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/sreeramkumarvr/Downloads/vibechack/node_modules/next/dist/server/base-server.js:1574:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/sreeramkumarvr/Downloads/vibechack/node_modules/next/dist/server/base-server.js:1482:28)
+    at async DevServer.renderPageComponent (/Users/sreeramkumarvr/Downloads/vibechack/node_modules/next/dist/server/base-server.js:1908:24)
+    at async DevServer.renderToResponseImpl (/Users/sreeramkumarvr/Downloads/vibechack/node_modules/next/dist/server/base-server.js:1946:32)
+    at async DevServer.pipeImpl (/Users/sreeramkumarvr/Downloads/vibechack/node_modules/next/dist/server/base-server.js:921:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/sreeramkumarvr/Downloads/vibechack/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/sreeramkumarvr/Downloads/vibechack/node_modules/next/dist/server/base-server.js:817:17)
+    at async /Users/sreeramkumarvr/Downloads/vibechack/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/sreeramkumarvr/Downloads/vibechack/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/sreeramkumarvr/Downloads/vibechack/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/sreeramkumarvr/Downloads/vibechack/node_modules/next/dist/server/lib/router-server.js:173:21)
+    at async handleRequest (/Users/sreeramkumarvr/Downloads/vibechack/node_modules/next/dist/server/lib/router-server.js:350:24)
+    at async requestHandlerImpl (/Users/sreeramkumarvr/Downloads/vibechack/node_modules/next/dist/server/lib/router-server.js:374:13)
+    at async Server.requestListener (/Users/sreeramkumarvr/Downloads/vibechack/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  status: 429,
+  statusText: 'Too Many Requests',
+  errorDetails: [
+    {
+      '@type': 'type.googleapis.com/google.rpc.QuotaFailure',
+      violations: [Array]
+    },
+    { '@type': 'type.googleapis.com/google.rpc.Help', links: [Array] },
+    {
+      '@type': 'type.googleapis.com/google.rpc.RetryInfo',
+      retryDelay: '38s'
+    }
+  ]
+}
+ POST /api/chat 500 in 1659ms
+ ✓ Compiled in 45ms (55 modules)
+ ✓ Compiled in 33ms (55 modules)
+Using model: gemini-1.5-flash
+Sending prompt to Gemini...
+Generated response: Hello!  Understanding security vulnerabilities is crucial for writing secure code.  To best help you...
+ POST /api/chat 200 in 3343ms
+[?25h
